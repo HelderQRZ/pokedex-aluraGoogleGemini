@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/icon-pokeball.png"/>
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+    </header>
+    <main>
+        <div class="esquerda">
+            <h2 class="esquerda__titulo">Procure um Pokémon pelo nome</h2>
+            <section class="busca__pesquisa">
+
+                <input class="campo__texto" type="text" id="buscaPokemon" placeholder="Nome">
+                <ul id="sugestoes" ></ul>
+            </section>
+            <section class="botao">
+                <button onclick="pesquisar()">Pesquisar</button>
+            </section>
+        </div>
+        <div class="direita" id="direita">
+            <section class="resultado__pesquisa hidden" id="resultado-pesquisa">
+                <div class="resultado-pesquisa-numero" id="resultado-pesquisa-numero">
+                    <p></p>
+                </div>
+                <div id="resultado-pesquisa-foto-nome">
+                    <img class="foto-pokemon" src="" alt="">
+                    <h4></h4>
+                </div>
+                <div id="resultado-pesquisa-tipo">
+                    <p class="tipo1"></p>
+                    <p class="tipo2"></p>
+                </div>
+            </section>
+            <h2></h2>
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <p class="footer__text">Desenvolvido por Helder Queiroz</p>
+        </section >
+        <section class="icons">
+            <a href="https://www.linkedin.com/in/helderqueiroz-dev/" target="_blank">
+            <img class="icons__socialMedia" src="/assets/icons8-linkedin-24.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/HelderQRZ" target="_blank">
+              <img class="icons__socialMedia" src="/assets/icons8-github-24.png" alt="Github">
+            </a>
+            <a href="https://www.instagram.com/helderqrz/" target="_blank">
+              <img class="icons__socialMedia" src="/assets/icons8-instagram-24.png" alt="Instagram">
+            </a>
+        </section >           
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
