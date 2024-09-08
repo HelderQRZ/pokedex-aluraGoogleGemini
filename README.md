@@ -43,7 +43,8 @@ Aqui está um exemplo de como a aplicação exibe os resultados:
 ## 📄 Licença
 
 Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
-🤝 Contribuições
+
+##🤝 Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para relatar issues.
 
