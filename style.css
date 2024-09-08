@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor1: #DC0A2D;
+    --cor2: #EFEFEF;
+    --cor3: #313131;
+    --cor4: #D9D9D9;
+    
+    /* Tipos Pokemon */
+    --Poison: #A040A0;
+    --Flying: #A890F0;
+    --Water: #6890F0;
+    --Fighting: #C03028;
+    --Ghost: #705898;
+    --Dragon: #7038F8;
+
+    --Grass: #78C850;
+    --Fire: #F08030;
+    --Bug: #A8B820;
+    --Normal: #A8A878;
+    --Electric: #F8D030;
+    --Ground: #E0C068;
+    --Fairy: #EE99AC;
+    --Psychic: #F85888;
+    --Rock: #B8A038;
+    --Steel: #B8B8D0;
+    --Ice: #98D8D8;     
+}
+
+body {
+    height: 100vh;
+
+}
+
+header {
+    display: flex;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    flex-direction: column;
+    height: 10vh;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    background-image: url(/assets/pokeball-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    padding-left: 1rem;
+}
+
+.esquerda__titulo {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.campo__texto {
+    width: 12rem;
+    height: 0.9rem;
+    padding: 0.3rem;
+    border: 0.2rem solid var(--cor3);
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+
+#sugestoes {
+    color: var(--cor3);
+    font-size: 1rem;
+    list-style-type: none;
+    padding-left: 0.5rem;
+}
+
+button {
+    background: linear-gradient(to bottom, #111111, #6b6b6b);
+    padding: 0.3rem;
+    border: 0.1rem solid var(--cor3);
+    border-radius: 2rem;
+    font-size: 1rem;
+    width: 5rem;
+    color: var(--cor2);
+    margin: 0.2rem;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    padding-right: 1rem;
+}
+
+.resultado__pesquisa {
+    background-color: var(--cor4);
+    background: linear-gradient(to bottom, #111111, #6b6b6b);
+    width: 10rem;
+    height: 16rem;
+    border-radius: 0.9rem;
+    border: 0.2rem solid var(--cor1);
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+#resultado-pesquisa-numero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    color: var(--cor4);
+}
+
+.foto-pokemon {
+    width: 8rem;
+    height: 8rem;
+}
+
+#resultado-pesquisa-foto-nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor4);
+}
+
+#resultado-pesquisa-tipo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.tipo1 {
+    background-color: var(--cor1);
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.tipo2 {
+    background-color: #949494;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
+}
+
+
+footer {
+    display: flex;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 10vh;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 459px) {
+    main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      gap: 1rem;
+    }
+
+    .esquerda {
+        padding-left: 0rem;
+    }
+
+    .direita {
+        padding-right: 0rem;
+
+    }
+  }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10rem;
+}
